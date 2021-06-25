@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+/*Remove default CSS */
+body,
+h1,
+h2,
+h3,
+p,
+a {
+  margin: 0;
+}
+
+/*Sam - need to help me see correct width -> remove if it's annoying :) */
+.ResolutionGuide {
+  width: 1920px;
+  height: 100%;
+  border: 3px solid black;
+}

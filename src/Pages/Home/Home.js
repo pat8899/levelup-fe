@@ -1,16 +1,12 @@
-import React from 'react'
-import "./Home.css"
+import React from "react";
+import "./Home.css";
 
 function Home() {
-    return (
-        <div>
-           <div className="Home_container"></div>
-  
-            <div className="DemoPageHome">
-            <h1>HOME PAGE</h1>
-        </div>
-        </div>
-    )
+  return (
+    <div>
+      <h1>HOME PAGE2</h1>
+    </div>
+  );
 }
 
-export default Home
+export default Home;
