@@ -27,13 +27,6 @@ function PreviewStudentProjects() {
           <p className="PreviewAgeLevel">[9 years old, Level 8]</p>
         </div>
       </div>
-      <div className="PreviewNavCircles">
-        <div className="PreviewNavCircleSelected"></div>
-        <div className="PreviewNavCircle"></div>
-        <div className="PreviewNavCircle"></div>
-        <div className="PreviewNavCircle"></div>
-        <div className="PreviewNavCircle"></div>
-      </div>
 
       <div className="PreviewGamesBtnContainer">
         <a href="/" className="PreviewGamesBtn">
