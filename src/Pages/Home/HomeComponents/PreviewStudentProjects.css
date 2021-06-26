@@ -1,0 +1,103 @@
+.PreviewStudentProjects {
+  background-color: #f1f1f1;
+  padding: 82px 0 73px;
+}
+
+.PreviewProjectsHeading {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 41px;
+  line-height: 55px;
+  color: #333333;
+  margin-bottom: 20.53px;
+  text-align: center;
+}
+
+.PreviewProjectsSubheading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13.6889px;
+  line-height: 150%;
+  color: #666666;
+  margin-bottom: 60.64px;
+  text-align: center;
+}
+
+.Carousel,
+.PreviewNavCircles {
+  display: flex;
+}
+
+.Carousel {
+  margin: 0 35%; /* Temp margins */
+}
+
+.PreviewProjectImg {
+  width: 253.24px;
+  height: 253.24px;
+  background-color: #8e9094;
+  margin: 0 15.5px 13.69px; /* Margins might need to be changed */
+}
+
+.PreviewStudentName {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20.5333px;
+  line-height: 27px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 6.76px;
+}
+
+.PreviewAgeLevel {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10.2667px;
+  line-height: 150%;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 61.93px;
+}
+
+.PreviewNavCircles {
+  margin: 0 0 42px 872px;
+}
+
+.PreviewNavCircle,
+.PreviewNavCircleSelected {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 24px;
+}
+
+.PreviewNavCircleSelected {
+  background: #8e9094;
+}
+
+.PreviewNavCircle {
+  background: #c9cbcb;
+}
+
+.PreviewGamesBtnContainer {
+  padding: 16px 0;
+  width: 180px;
+  background: #8e9094;
+  border-radius: 8px;
+  text-align: center;
+  margin-left: 868px;
+}
+
+.PreviewGamesBtn {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+}
