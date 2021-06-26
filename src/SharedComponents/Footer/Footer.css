@@ -1,10 +1,134 @@
-.footer_container {
-    margin: 0 auto;
-        background-color: rgb(150, 151, 151);
-    }
-    .footer_subcon {
-        max-width: 960px;
-        margin: 0 auto;
-        display: flex;
-    }
-   
+/*Footer format */
+.FooterContainer,
+.ContactLocation,
+.ContactEmail,
+.ContactPhone {
+  display: flex;
+}
+
+/*Needs total height to bed added - talk to ux*/
+.FooterContainer {
+  background-color: #f1f1f1;
+  height: 264px;
+}
+
+/* ----Contact---- */
+.ContactUs {
+  margin: 37px 0 0 417px;
+}
+
+.ContactHeader {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13.7778px;
+  line-height: 19px;
+  color: #333333;
+  margin-bottom: 23.25px;
+}
+
+.ContactOption {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13.7778px;
+  line-height: 150%;
+  color: #666666;
+  margin-bottom: 31.08px;
+}
+
+/*Image re-sizing */
+.LocationImg {
+  width: 12.06px;
+  height: 17.22px;
+  margin: 0 18.08px 0 5.4px; /* Left Margin calc.  15.5px(Max width of image) - actual width + 2px */
+}
+
+.EmailImg {
+  width: 17.22px;
+  height: 13.78px;
+  margin: 0 15.5px 0 2px;
+}
+
+.PhoneImg {
+  width: 15.5;
+  height: 15.5px;
+  margin: 0 16.36px 0 2px;
+}
+
+/* ----Footer Circles---- */
+.FooterCircles {
+  display: flex;
+  margin: 0 276.11px; /* Left margin has been estimated */
+}
+
+.FooterCircle {
+  width: 34.44px;
+  height: 34.44px;
+  border-radius: 50%;
+  background-color: #8e9094;
+  margin-top: 184px;
+}
+
+.CenterCircle {
+  margin-left: 13.78px;
+  margin-right: 13.78px;
+}
+
+/* ----Subscribe---- */
+.Subscribe {
+  margin-top: 37px;
+}
+
+.SubscribeHeading {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13.7778px;
+  line-height: 19px;
+  color: #333333;
+}
+
+.SubscribeSubheading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13.7778px;
+  line-height: 150%;
+  color: #666666;
+  margin: 22px 0 6.9px;
+}
+
+.SubscribeInput {
+  /*Text */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13.78px;
+  line-height: 150%;
+  color: #999999;
+  padding-left: 13.78px;
+
+  /*Container */
+  width: 241.11px; /*254.89px - 13.78px(left padding) */
+  height: 48.22px;
+  background: #ffffff;
+  border: 0.861111px solid #8e9094;
+}
+
+.SubscribeBtnContainer {
+  padding: 13.78px 41.33px;
+  background: #8e9094;
+  border-radius: 6.88889px;
+  margin: 20.67px 117.97px 0 0;
+}
+
+.SubscribeBtn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.0556px;
+  line-height: 150%;
+  text-decoration: none;
+  color: #ffffff;
+}
