@@ -1,7 +1,5 @@
 import React from "react";
 import "./Navbar.css";
-import EnrolNowBtn from "../Buttons/EnrolNowBtn";
-import StudentPortalBtn from "../Buttons/StudentPortalBtn";
 
 function Navbar() {
   return (
@@ -23,8 +21,16 @@ function Navbar() {
           Contact
         </a>
         {/*Height looks wrong might need to adjust*/}
-        <EnrolNowBtn />
-        <StudentPortalBtn />
+        <div className="EnrolNowBtnContainer">
+          <a href="/" className="EnrolNowBtn">
+            Enrol Now
+          </a>
+        </div>
+        <div className="StudentPortalBtnContainer">
+          <a href="/" className="StudentPortalBtn">
+            Student Portal
+          </a>
+        </div>
       </div>
     </div>
   );
