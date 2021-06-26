@@ -1,0 +1,55 @@
+.HeroContainer {
+  display: flex;
+}
+
+/* Hero Details */
+.HeroDetails {
+  margin: 171px 0 28px 344px;
+}
+
+.HeroHeader {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 86px;
+  color: #333333;
+}
+
+.HeroBrief {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #666666;
+  margin: 28px 0 40px;
+}
+
+.EnrolNowBtnContainerLarge {
+  background-color: #8e9094;
+  border-radius: 8px;
+  width: 112px;
+  padding: 16px 0;
+  text-align: center;
+}
+
+.EnrolNowBtnLarge {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*Image */
+.HeroImg {
+  width: 48px;
+  height: 48px;
+  padding: 282px 365px 301px 368px;
+  background-color: #f1f1f1;
+  margin: 28px 0 93px -147px;
+  z-index: -1;
+}
