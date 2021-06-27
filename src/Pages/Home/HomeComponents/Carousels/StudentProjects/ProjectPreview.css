@@ -1,0 +1,31 @@
+.PreviewProjectImg {
+  width: 253.24px;
+  height: 253.24px;
+  background-color: #8e9094;
+  margin: 0 16.88px 13.69px;
+  opacity: 0.2;
+}
+
+.PreviewStudentName {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20.5333px;
+  line-height: 27px;
+  text-align: center;
+  color: #333333;
+  opacity: 0.2;
+  margin-bottom: 6.76px;
+}
+
+.PreviewAgeLevel {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10.2667px;
+  line-height: 150%;
+  text-align: center;
+  color: #333333;
+  opacity: 0.2;
+  margin-bottom: 61.93px;
+}

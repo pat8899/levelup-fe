@@ -1,0 +1,22 @@
+.CarouselRow {
+  display: flex;
+  position: relative;
+  margin-left: 95px;
+}
+
+.CarouselArrowLeft,
+.CarouselArrowRight {
+  width: 54.93px;
+  height: 54.93px;
+  margin-top: 97px;
+  position: absolute;
+}
+
+.CarouselArrowLeft {
+  left: 242px;
+  z-index: 2;
+}
+
+.CarouselArrowRight {
+  left: 1425px;
+}

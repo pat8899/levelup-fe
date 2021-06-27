@@ -1,5 +1,7 @@
 import React from "react";
 import "./PreviewStudentProjects.css";
+import ProjectsCarousel from "./Carousels/StudentProjects/ProjectsCarousel";
+import {CarouselData} from "./Carousels/StudentProjects/CarouselData";
 
 function PreviewStudentProjects() {
   return (
@@ -14,20 +16,10 @@ function PreviewStudentProjects() {
           exercitation.
         </p>
       </div>
-      <div className="Carousel">
-        {/*Add props -> use flex-grid*/}
-        <div>
-          <div className="PreviewProjectImg"></div>
-          <h3 className="PreviewStudentName">[Student Name]</h3>
-          <p className="PreviewAgeLevel">[9 years old, Level 8]</p>
-        </div>
-        <div>
-          <div className="PreviewProjectImg"></div>
-          <h3 className="PreviewStudentName">[Student Name]</h3>
-          <p className="PreviewAgeLevel">[9 years old, Level 8]</p>
-        </div>
+      <div>
+        <ProjectsCarousel review={CarouselData} />
       </div>
-
+      <div>{/*Might need to remove the Carousel Data part? */}</div>
       <div className="PreviewGamesBtnContainer">
         <a href="/" className="PreviewGamesBtn">
           Play the Games Here
