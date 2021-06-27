@@ -13,7 +13,7 @@ function Course() {
       <CourseTwo />
       <CourseDetails3 />
       <PrgmPathways4 />
-       
+       {/* 2 last sections - to be continued */}
       
     </div>
   );
