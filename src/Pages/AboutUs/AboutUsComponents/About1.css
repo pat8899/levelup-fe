@@ -1,0 +1,39 @@
+.About1Container {
+    display: flex;
+  }
+  
+  /* About1 Details */
+  .About1Details {
+    margin: 171px 0 28px 344px;
+  }
+  
+  .About1Header {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 86px;
+    color: #333333;
+  }
+  
+  .About1Brief {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #666666;
+    margin: 28px 0 40px;
+  }
+  
+ 
+  /*Image */
+  .About1Img {
+    width: 48px;
+    height: 48px;
+    padding: 282px 365px 201px 368px;
+    background-color: #f1f1f1;
+    margin: 28px 0 40px 180px;
+    z-index: -1;
+  }
+  

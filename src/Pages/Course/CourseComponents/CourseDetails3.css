@@ -1,0 +1,43 @@
+.CourseDetails3Container {
+    text-align: center;
+  }
+.CourseDetails3SubContainer {
+  max-width: 960;
+}
+  .CourseDetails3Heading {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 55px;
+    color: #333333;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  .Roundsquare {
+    display: flex;
+    align-items: inline-flex;
+    margin-top: 15px;
+    margin-left: 60px;
+    width: 22px;
+    height: 22px;
+  }
+.CourseDetails3ListText {
+display: inline-flex;
+font-size: 18px;
+margin-top: -25px;
+margin-bottom: 40px;
+margin-left: 3px;
+  }
+  .CourseDetails3Lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+  }
+  .CourseDetails3 {
+    display: flex;
+    text-align: center;
+    margin: 83px 441px 212px 83px;
+  }
+
+  

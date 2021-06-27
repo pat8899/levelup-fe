@@ -1,0 +1,130 @@
+.CourseTwoContainer,
+.CourseTwoLists,
+.CourseTwoListHead,
+.CourseTwoListText
+ {
+    display: flex;
+  }
+.CourseTwoContainer
+{
+    background-color: #e4e4e6;
+}
+  .Roundcircle
+  {
+      width: 20px;
+      height: 20px;
+      margin-top: 10px;
+  }
+  /* CourseTwo Details */
+  .CourseTwoDetails {
+    margin: 30px 0 28px 344px;
+  }
+  
+  .CourseTwoHeader {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 66px;
+    color: #333333;
+ 
+  }
+  
+  .CourseTwoListHeader {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 86px;
+    color: #333333;  
+  }
+  .CourseTwoBrief {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #666666;
+    margin: 28px 0 40px;
+  }
+  .CourseTwoListText {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #666666;
+    margin-left: -140px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .CourseTwoListText2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #666666;
+    margin-left: -65px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .CourseTwoListText3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #666666;
+    margin-left: -93px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .CourseTwoListHead
+  {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 150%;
+    color: #666666;
+    margin-left: 22px;
+    margin-bottom: 30px;
+
+  }
+  .EnrolNowBtnContainerLarge {
+    background-color: #8e9094;
+    border-radius: 8px;
+    width: 112px;
+    padding: 16px 0;
+    text-align: center;
+  }
+  
+  .EnrolNowBtnLarge {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  /*Image */
+  .CourseTwoImg {
+    width: 48px;
+    height: 48px;
+    padding: 282px 265px 281px 268px;
+    background-color: #f1f1f1;
+    margin: 28px 0 193px 160px;
+    z-index: -1;
+  }
+
+  .CourseCircle {
+    width: 34.44px;
+    height: 34.44px;
+    border-radius: 50%;
+    background-color: #8e9094;
+  }
+  

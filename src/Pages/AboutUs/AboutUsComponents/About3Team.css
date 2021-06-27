@@ -1,0 +1,59 @@
+.About3TeamContainer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: rgb(201, 199, 199);
+}
+.About3TeamSubContainer {
+  display: inline-flex;
+  margin: 80px;
+}
+
+.About3TeamHeading {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 41px;
+  line-height: 55px;
+  color: #333333;
+}
+
+.About3Team {
+  display: flex;
+  text-align: center;
+  margin: 83px 441px 112px;
+}
+
+.Benefit2 {
+  margin-left: 92px;
+  margin-right: 92px;
+}
+
+.About3TeamImgPlaceholder {
+  width: 150px;
+  height: 150px;
+  background: #8e9094;
+  border-radius: 180px;
+  margin: 0 118.63px 28.16px;
+}
+
+.About3TeamSubheading {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20.4833px;
+  line-height: 27px;
+  color: #333333;
+  margin-bottom: 6.52px;
+}
+
+.About3TeamDescription {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13.6556px;
+  line-height: 150%;
+  color: #666666;
+  padding: 30px 50px;
+}
