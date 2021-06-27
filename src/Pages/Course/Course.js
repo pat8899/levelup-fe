@@ -4,6 +4,7 @@ import "./Course.css";
 import CourseOne from "./CourseComponents/CourseOne";
 import CourseTwo from "./CourseComponents/CourseTwo";
 import CourseDetails3 from "./CourseComponents/CourseDetails3";
+import PrgmPathways4 from "./CourseComponents/PrgmPathways4";
 
 function Course() {
   return (
@@ -11,6 +12,8 @@ function Course() {
       <CourseOne />
       <CourseTwo />
       <CourseDetails3 />
+      <PrgmPathways4 />
+       
       
     </div>
   );

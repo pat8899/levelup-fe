@@ -1,0 +1,67 @@
+.PrgmPathways4Container {
+    margin-top: 30px;
+    padding-top: 35px;
+    background-color: #c4c4c5
+  }
+  
+  .PrgmPathways4Heading {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 55px;
+    color: #333333;
+    text-align: center;
+  }
+  
+  .PrgmPathways4 {
+    display: flex;
+    text-align: center;
+    margin: 83px 441px 112px;
+  }
+  
+.PrgmPathways4Container2 {
+    align-items: center;
+    display: inline-table;
+    margin: 33px 441px 112px;
+}
+  
+.PrgmPwBlock
+{
+    background-color: #969494;
+    border-radius: 5px;
+    margin: 20px 26px 20px 26px;
+    display: inline-table;
+    padding: 20px 28px
+}
+  
+  .PrgmPwSubheading1 {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20.4833px;
+    line-height: 27px;
+    color: white;
+    margin-bottom: 25px;
+    margin-top: 15px;
+  }
+  
+  .PrgmPwSubheading2 {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 27px;
+    color:white;
+    margin-bottom: 6.52px;
+  }
+  .PrgmPathways4Description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
