@@ -9,6 +9,7 @@
 .NavArrowRight {
   width: 54.93px;
   height: 54.93px;
+  cursor: pointer;
 }
 
 .NavArrowLeft {
