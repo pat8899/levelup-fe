@@ -117,9 +117,6 @@
 }
 
 .SubscribeBtnContainer {
-  padding: 13.78px 41.33px;
-  background: #8e9094;
-  border-radius: 6.88889px;
   margin: 20.67px 117.97px 0 0;
 }
 
@@ -131,4 +128,7 @@
   line-height: 150%;
   text-decoration: none;
   color: #ffffff;
+  padding: 13.78px 41.33px;
+  background: #8e9094;
+  border-radius: 6.88889px;
 }

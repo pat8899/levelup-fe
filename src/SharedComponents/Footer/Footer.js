@@ -38,8 +38,8 @@ function Footer() {
           className="SubscribeInput"
         ></input>
         <div className="SubscribeBtnContainer">
-          <a href="/" className="SubscribeBtn">
-            Subscribe
+          <a href="/" className="link">
+            <h2 className="SubscribeBtn">Subscribe</h2>
           </a>
         </div>
       </div>
