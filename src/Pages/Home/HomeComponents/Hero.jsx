@@ -15,9 +15,9 @@ function Hero() {
           Lorem ipsum dolor sit amet, consectutue adipiscing elit, sed <br />
           do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <div className="EnrolNowBtnContainerLarge">
-          <a href="/" className="EnrolNowBtnLarge">
-            Enrol Now
+        <div className="EnrolNowBtnContainerLrg">
+          <a href="/" className="link">
+            <h2 className="EnrolNowBtnLrg">Enrol Now</h2>
           </a>
         </div>
       </div>

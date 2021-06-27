@@ -26,22 +26,22 @@
   margin: 28px 0 40px;
 }
 
-.EnrolNowBtnContainerLarge {
-  background-color: #8e9094;
-  border-radius: 8px;
+.EnrolNowBtnContainerLrg {
   width: 112px;
-  padding: 16px 0;
-  text-align: center;
 }
 
-.EnrolNowBtnLarge {
+.EnrolNowBtnLrg {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 150%;
   color: #ffffff;
-  text-decoration: none;
+  background-color: #8e9094;
+  border-radius: 8px;
+  width: 112px;
+  padding: 16px 0;
+  text-align: center;
 }
 
 /*Image */

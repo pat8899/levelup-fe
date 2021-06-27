@@ -33,10 +33,6 @@
 
 .LearnMoreBtnContainer {
   width: 120px;
-  padding: 16px 0;
-  text-align: center;
-  background: #8e9094;
-  border-radius: 8px;
 }
 
 .LearnMoreBtn {
@@ -46,5 +42,8 @@
   font-size: 14px;
   line-height: 150%;
   color: #ffffff;
-  text-decoration: none;
+  padding: 16px 0;
+  text-align: center;
+  background: #8e9094;
+  border-radius: 8px;
 }

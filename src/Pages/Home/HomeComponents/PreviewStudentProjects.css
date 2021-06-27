@@ -26,16 +26,15 @@
 }
 
 .PreviewGamesBtnContainer {
-  padding: 16px 0;
   width: 180px;
-  background: #8e9094;
-  border-radius: 8px;
-  text-align: center;
   margin-left: 868px;
 }
 
 .PreviewGamesBtn {
-  text-decoration: none;
+  padding: 16px 24px;
+  background: #8e9094;
+  border-radius: 8px;
+  text-align: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;

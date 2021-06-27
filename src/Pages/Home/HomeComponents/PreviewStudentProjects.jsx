@@ -6,7 +6,6 @@ import {CarouselData} from "./Carousels/StudentProjects/CarouselData";
 function PreviewStudentProjects() {
   return (
     <div className="PreviewStudentProjects">
-      {/*Pull from database*/}
       <div>
         <h1 className="PreviewProjectsHeading">View our Student Projects</h1>
         <p className="PreviewProjectsSubheading">
@@ -19,13 +18,12 @@ function PreviewStudentProjects() {
       <div>
         <ProjectsCarousel review={CarouselData} />
       </div>
-      <div>{/*Might need to remove the Carousel Data part? */}</div>
+
       <div className="PreviewGamesBtnContainer">
-        <a href="/" className="PreviewGamesBtn">
-          Play the Games Here
+        <a href="/" className="link">
+          <h2 className="PreviewGamesBtn">Play the Games Here</h2>
         </a>
       </div>
-      <div className="PreviewBotPadding"></div>
     </div>
   );
 }

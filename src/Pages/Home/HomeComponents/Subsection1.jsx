@@ -24,8 +24,8 @@ function Subsection1() {
           adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
         </p>
         <div className="LearnMoreBtnContainer">
-          <a href="/" className="LearnMoreBtn">
-            Learn More
+          <a href="/" className="link">
+            <h2 className="LearnMoreBtn">Learn More</h2>
           </a>
         </div>
       </div>
