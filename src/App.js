@@ -7,6 +7,7 @@ import Footer from "./SharedComponents/Footer/Footer";
 import Home from "./Pages/Home/Home";
 import Course from "./Pages/Course/Course";
 import AboutUs from "./Pages/AboutUs/AboutUs";
+import StudentProjects from "./Pages/StudentProjects/StudentProjectsPage";
 
 import "./App.css";
 
@@ -21,6 +22,11 @@ function App() {
         <Route exact path="/course" component={Course}></Route>
         <Route path="/home" component={Home}></Route>
         <Route exact path="/aboutus" component={AboutUs}></Route>
+        <Route
+          exact
+          path="/student-projects"
+          component={StudentProjects}
+        ></Route>
       </switch>
       <Footer />
     </div>

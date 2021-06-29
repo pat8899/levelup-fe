@@ -1,0 +1,73 @@
+.ModalBackground {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.71);
+  position: fixed;
+  /* display: flex; */
+  padding: 178px 0 0 272px;
+  margin-top: -125px;
+}
+
+.ModalProject {
+  display: flex;
+}
+
+.ModalNavArrow {
+  width: 89.23px;
+  height: 89.23px;
+  margin-top: 370px;
+}
+
+.PlayButtonModal {
+  background: #f1f1f1;
+  border-radius: 17.7px 0px 0px 17.7px;
+  padding: 354px 456.51px 361px;
+}
+
+.DescriptionModal {
+  width: 214px;
+  height: 803px;
+  background-color: #aaaaaa;
+  border-radius: 0px 17.7px 17.7px 0px;
+}
+
+.CloseButton {
+  width: 25px; /*Estimate*/
+  height: 25px; /*Estimate*/
+  margin: 20px 0 0 160px; /*Estimate*/
+}
+
+.ProjectDescriptionModal,
+.StudentNameModal,
+.StudentDetailsModal,
+.ProjectHeaderModal {
+  font-family: Raleway;
+  font-style: normal;
+  font-size: 24px;
+  color: #ffffff;
+  width: 182px;
+  margin-left: 25px;
+}
+
+.ProjectHeaderModal {
+  font-weight: bold;
+  line-height: 30px;
+  margin-top: 72px;
+  margin-bottom: 35px;
+}
+
+.ProjectDescriptionModal {
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 320px; /*Esitmate*/
+}
+
+.StudentNameModal {
+  font-weight: bold;
+  line-height: 35px;
+}
+
+.StudentDetailsModal {
+  font-weight: 500;
+  line-height: 35px;
+}
