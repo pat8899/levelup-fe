@@ -18,8 +18,8 @@ export const Modal = ({showModal, setShowModal}) => {
     <>
       {showModal ? (
         <div className="ModalBackground" ref={modalRef} onClick={closeModal}>
+          <img src={NavArrowLeft} alt="Left" className="ModalNavArrow" />
           <div className="ModalProject">
-            <img src={NavArrowLeft} alt="Left" className="ModalNavArrow" />
             <div>
               <img
                 src={PlayButton}
@@ -43,8 +43,8 @@ export const Modal = ({showModal, setShowModal}) => {
               <p className="StudentDetailsModal">10 years old</p>
               <p className="StudentDetailsModal">Level 16</p>
             </div>
-            <img src={NavArrowRight} alt="Left" className="ModalNavArrow" />
           </div>
+          <img src={NavArrowRight} alt="Left" className="ModalNavArrow" />
         </div>
       ) : null}
     </>
