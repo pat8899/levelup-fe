@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "./ProjectsCarousel.css";
-import {CarouselData} from "./CarouselData";
+import {StudentProjects} from "../../../../../Data/StudentProjects";
 import ProjectHighlight from "./ProjectHighlight";
 import ProjectPreview from "./ProjectPreview";
 import NavArrowLeft from "../../../../../Images/NavArrowLeft.png";
@@ -16,7 +16,7 @@ function ProjectsCarousel() {
 
   //   const length = review.length;
 
-  const Project = CarouselData.map(function (data) {
+  const Project = StudentProjects.map(function (data) {
     return data;
   });
 

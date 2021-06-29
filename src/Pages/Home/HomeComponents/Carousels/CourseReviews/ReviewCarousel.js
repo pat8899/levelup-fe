@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "./ReviewCarousel.css";
-import {ReviewData} from "./ReviewData";
+import {ReviewData} from "../../../../../Data/ReviewData";
 import NavArrowLeft from "../../../../../Images/NavArrowLeft.png";
 import NavArrowRight from "../../../../../Images/NavArrowRight.png";
 

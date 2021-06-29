@@ -1,4 +1,4 @@
-export const CarouselData = [
+export const StudentProjects = [
   {
     // img: "",
     studentName: "Billy Edwards",

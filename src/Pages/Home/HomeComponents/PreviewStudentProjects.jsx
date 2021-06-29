@@ -1,7 +1,7 @@
 import React from "react";
 import "./PreviewStudentProjects.css";
 import ProjectsCarousel from "./Carousels/StudentProjects/ProjectsCarousel";
-import {CarouselData} from "./Carousels/StudentProjects/CarouselData";
+import {StudentProjects} from "../../../Data/StudentProjects";
 
 function PreviewStudentProjects() {
   return (
@@ -16,7 +16,7 @@ function PreviewStudentProjects() {
         </p>
       </div>
       <div>
-        <ProjectsCarousel review={CarouselData} />
+        <ProjectsCarousel review={StudentProjects} />
       </div>
 
       <div className="PreviewGamesBtnContainer">
