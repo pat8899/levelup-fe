@@ -8,6 +8,7 @@
 .CourseTwoContainer
 {
     background-color: #e4e4e6;
+    margin-top: 0;
 }
   .Roundcircle
   {
@@ -17,7 +18,8 @@
   }
   /* CourseTwo Details */
   .CourseTwoDetails {
-    margin: 30px 0 28px 344px;
+    margin: 10px 0 28px 344px;
+    padding-top: 25px;
   }
   
   .CourseTwoHeader {
@@ -117,7 +119,7 @@
     height: 48px;
     padding: 282px 265px 281px 268px;
     background-color: #f1f1f1;
-    margin: 28px 0 193px 160px;
+    margin: 48px 0 193px 160px;
     z-index: -1;
   }
 

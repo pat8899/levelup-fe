@@ -1,0 +1,30 @@
+.Faq6Container {
+    margin: 40px auto;
+    align-items: center;
+    max-width: 55%;
+    padding-top: 40px;
+
+}
+.col-8 {
+    padding-left: 150px;
+}
+
+.Faq6Header {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 75px;
+    color: #333333;
+    margin-bottom: 40px;
+    margin-left: 150px;
+}
+.Faq6Gap {
+    margin-top: 40px;
+}
+.form-select {
+    height: 50px;
+    border-left: none ;
+    border-right: none ;
+
+}
