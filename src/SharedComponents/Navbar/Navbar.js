@@ -11,17 +11,17 @@ function Navbar() {
           </a>
         </div>
         <div>
-          <a href="/" className="link">
+          <a href="/course" className="link">
             <h2 className="NavBarOption">Our Course</h2>
           </a>
         </div>
         <div>
-          <a href="/" className="link">
+          <a href="/student-projects" className="link">
             <h2 className="NavBarOption StudentProjects">Student Projects</h2>
           </a>
         </div>
         <div>
-          <a href="/" className="link ">
+          <a href="/aboutus" className="link ">
             <h2 className="NavBarOption">About Us</h2>
           </a>
         </div>
