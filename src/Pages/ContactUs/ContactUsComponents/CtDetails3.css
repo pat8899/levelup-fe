@@ -1,0 +1,22 @@
+.CtDetails3Container {
+    margin: 0 auto;
+    height: 200px;
+    background-color: rgb(235, 234, 234);
+    align-content: center;
+}
+
+.CtDetails3SubHeader {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 86px;
+    color: #333333;
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.col {
+    margin-left: 150px;
+}

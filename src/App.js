@@ -8,6 +8,7 @@ import Home from "./Pages/Home/Home";
 import Course from "./Pages/Course/Course";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import StudentProjects from "./Pages/StudentProjects/StudentProjectsPage";
+import ContactUs from "./Pages/ContactUs/ContactUs";
 
 import "./App.css";
 
@@ -27,6 +28,7 @@ function App() {
           path="/student-projects"
           component={StudentProjects}
         ></Route>
+        <Route exact path="/contactus" component={ContactUs}></Route>
       </switch>
       <Footer />
     </div>
