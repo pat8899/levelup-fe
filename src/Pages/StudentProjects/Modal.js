@@ -10,6 +10,8 @@ export const Modal = ({
   setShowModal,
   modalProject,
   setModalProject,
+  PreviousModal,
+  NextModal,
 }) => {
   const modalRef = useRef();
 
@@ -23,7 +25,12 @@ export const Modal = ({
     <>
       {showModal ? (
         <div className="ModalBackground" ref={modalRef} onClick={closeModal}>
-          <img src={NavArrowLeft} alt="Left" className="ModalNavArrow" />
+          <img
+            src={NavArrowLeft}
+            alt="Left"
+            className="ModalNavArrow"
+            onClick={PreviousModal}
+          />
           <div className="ModalProject">
             <div>
               <img
@@ -51,7 +58,12 @@ export const Modal = ({
               <p className="StudentDetailsModal">Level {modalProject.level}</p>
             </div>
           </div>
-          <img src={NavArrowRight} alt="Left" className="ModalNavArrow" />
+          <img
+            src={NavArrowRight}
+            alt="Left"
+            className="ModalNavArrow"
+            onClick={NextModal}
+          />
         </div>
       ) : null}
     </>

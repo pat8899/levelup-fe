@@ -38,41 +38,112 @@ function StudentProjectsPage() {
   const p6 = data[project6];
 
   /* Updates modal with data from projects onClick */
+  /* Current is used to navigate between different Projects in Modal.js*/
   const modalUpdateProject1 = () => {
-    let updateModal = {name: p1.studentName, age: p1.age, level: p1.level};
+    let updateModal = {
+      name: p1.studentName,
+      age: p1.age,
+      level: p1.level,
+      current: 0,
+    };
     setModalProject(updateModal);
-    setShowModal((prev) => !prev);
+    setShowModal(true);
   };
 
   const modalUpdateProject2 = () => {
-    let updateModal = {name: p2.studentName, age: p2.age, level: p2.level};
+    let updateModal = {
+      name: p2.studentName,
+      age: p2.age,
+      level: p2.level,
+      current: 1,
+    };
     setModalProject(updateModal);
-    setShowModal((prev) => !prev);
+    setShowModal(true);
   };
 
   const modalUpdateProject3 = () => {
-    let updateModal = {name: p3.studentName, age: p3.age, level: p3.level};
+    let updateModal = {
+      name: p3.studentName,
+      age: p3.age,
+      level: p3.level,
+      current: 2,
+    };
     setModalProject(updateModal);
-    setShowModal((prev) => !prev);
+    setShowModal(true);
   };
 
   const modalUpdateProject4 = () => {
-    let updateModal = {name: p4.studentName, age: p4.age, level: p4.level};
+    let updateModal = {
+      name: p4.studentName,
+      age: p4.age,
+      level: p4.level,
+      current: 3,
+    };
     setModalProject(updateModal);
-    setShowModal((prev) => !prev);
+    setShowModal(true);
   };
 
   const modalUpdateProject5 = () => {
-    let updateModal = {name: p5.studentName, age: p5.age, level: p5.level};
+    let updateModal = {
+      name: p5.studentName,
+      age: p5.age,
+      level: p5.level,
+      current: 4,
+    };
     setModalProject(updateModal);
-    setShowModal((prev) => !prev);
+    setShowModal(true);
   };
 
   const modalUpdateProject6 = () => {
-    let updateModal = {name: p6.studentName, age: p6.age, level: p6.level};
+    let updateModal = {
+      name: p6.studentName,
+      age: p6.age,
+      level: p6.level,
+      current: 5,
+    };
     setModalProject(updateModal);
-    setShowModal((prev) => !prev);
+    setShowModal(true);
   };
+
+  /* Testing  */
+  function PreviousModal() {
+    const nextModal =
+      modalProject.current - 1 === -1 ? 5 : modalProject.current - 1;
+    if (nextModal === 0) {
+      return modalUpdateProject1();
+    } else if (nextModal === 1) {
+      return modalUpdateProject2();
+    } else if (nextModal === 2) {
+      return modalUpdateProject3();
+    } else if (nextModal === 3) {
+      return modalUpdateProject4();
+    } else if (nextModal === 4) {
+      return modalUpdateProject5();
+    } else if (nextModal === 5) {
+      return modalUpdateProject6();
+    }
+  }
+
+  function NextModal() {
+    const nextModal =
+      modalProject.current + 1 === 6 ? 0 : modalProject.current + 1;
+    if (nextModal === 0) {
+      return modalUpdateProject1();
+    } else if (nextModal === 1) {
+      return modalUpdateProject2();
+    } else if (nextModal === 2) {
+      return modalUpdateProject3();
+    } else if (nextModal === 3) {
+      return modalUpdateProject4();
+    } else if (nextModal === 4) {
+      return modalUpdateProject5();
+    } else if (nextModal === 5) {
+      return modalUpdateProject6();
+    }
+  }
+  /* Testing  */
+
+  console.log(modalProject);
 
   const scrollHeight = 1200; /*Added to stop page shuffling up and down */
 
@@ -115,6 +186,8 @@ function StudentProjectsPage() {
         setShowModal={setShowModal}
         modalProject={modalProject}
         setModalProject={setModalProject}
+        PreviousModal={PreviousModal}
+        NextModal={NextModal}
       />
       <Hero
         header="Student Projects"
