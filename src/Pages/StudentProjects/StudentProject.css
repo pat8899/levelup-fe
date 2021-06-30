@@ -1,0 +1,50 @@
+.ProjectFooter {
+  margin-top: -4px;
+  margin-right: 0px;
+  width: 600.3px;
+  height: 72.46px;
+  display: flex;
+  background-color: #8e9094;
+  border-radius: 0px 0px 8.28108px 8.28108px;
+  position: relative;
+  z-index: 0;
+}
+
+.StudentDetails {
+  text-align: center;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16.5622px;
+  line-height: 23px;
+  color: #ffffff;
+  margin-left: 60px;
+}
+
+.SDName {
+  margin-top: 12px;
+}
+
+.PlayGameBtn {
+  padding: 16.56px 49.69px;
+  border-radius: 8.28108px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16.5622px;
+  line-height: 150%;
+  color: #ffffff;
+  background-color: #8e9094;
+  border: 1.03514px solid #ffffff;
+  cursor: pointer;
+  position: absolute;
+  right: 9.34px;
+  top: 7.24px;
+}
+
+.PlayButton {
+  padding: 117px 252.68px 118.54px;
+  background-color: #f1f1f1;
+  border-radius: 8.28108px 8.28108px 0px 0px;
+  cursor: pointer;
+}

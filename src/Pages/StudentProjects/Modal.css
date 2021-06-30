@@ -6,6 +6,7 @@
   display: flex;
   padding: 178px 0 0 272px;
   margin-top: -125px;
+  z-index: 1;
 }
 
 .ModalProject {

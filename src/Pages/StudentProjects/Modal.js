@@ -5,7 +5,12 @@ import NavArrowRight from "../../Images/NavArrowRightWhite.png";
 import PlayButton from "../../Images/PlayButton.png";
 import Close from "../../Images/Close.png";
 
-export const Modal = ({showModal, setShowModal}) => {
+export const Modal = ({
+  showModal,
+  setShowModal,
+  modalProject,
+  setModalProject,
+}) => {
   const modalRef = useRef();
 
   const closeModal = (e) => {
@@ -13,6 +18,8 @@ export const Modal = ({showModal, setShowModal}) => {
       setShowModal(false);
     }
   };
+
+  console.log(modalProject);
 
   return (
     <>
@@ -39,9 +46,11 @@ export const Modal = ({showModal, setShowModal}) => {
                 Lorem ipsum dolor sit amet, consectutue adipiscing elit.
               </p>
               {/*Pass below as props*/}
-              <h3 className="StudentNameModal">John Doe</h3>
-              <p className="StudentDetailsModal">10 years old</p>
-              <p className="StudentDetailsModal">Level 16</p>
+              <h3 className="StudentNameModal">{modalProject.name}</h3>
+              <p className="StudentDetailsModal">
+                {modalProject.age} years old
+              </p>
+              <p className="StudentDetailsModal">Level {modalProject.level}</p>
             </div>
           </div>
           <img src={NavArrowRight} alt="Left" className="ModalNavArrow" />
