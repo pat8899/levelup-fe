@@ -5,3 +5,25 @@
   grid-column-gap: 70px;
   margin-left: 335px;
 }
+
+.PageNav {
+  display: flex;
+  margin: 46px 0 46px 880px;
+}
+
+.NavArrow {
+  width: 54.93px;
+  height: 54.96px;
+  cursor: pointer;
+}
+
+.NavNumberButtons {
+  margin: 0 5px;
+  cursor: pointer;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 55px;
+  color: #333333;
+}

@@ -19,8 +19,6 @@ export const Modal = ({
     }
   };
 
-  console.log(modalProject);
-
   return (
     <>
       {showModal ? (
