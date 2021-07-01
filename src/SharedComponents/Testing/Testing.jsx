@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import Axious from "axios"; /*Library allows you to create http requests to send information from the front end to the backend*/
+import Axios from "axios"; /*Library allows you to create http requests to send information from the front end to the backend*/
 import "./Testing.css";
 
 function Testing() {
@@ -11,13 +11,13 @@ function Testing() {
 
   /*Called whenever page is refreshed */
   useEffect(() => {
-    Axious.get("http://localhost:3001/read").then((response) => {
+    Axios.get("http://localhost:3001/read").then((response) => {
       setProjectList(response.data);
     });
   }, []);
 
   const addToDB = () => {
-    Axious.post("http://localhost:3001/insert", {
+    Axios.post("http://localhost:3001/insert", {
       studentName: studentName,
       studentAge: studentAge,
       studentLevel: studentLevel,
