@@ -1,0 +1,13 @@
+.TestingLayout {
+  margin: 100px;
+}
+
+.InputDetails,
+.InputBrief,
+.InputButton {
+  font-size: 30px;
+}
+
+.InputButton {
+  width: 200px;
+}
