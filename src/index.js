@@ -4,6 +4,10 @@ import { BrowserRouter } from 'react-router-dom';
 
 import App from "./App";
 import "./index.css";
+
+
+// Authen
+import reportWebVitals from './reportWebVitals';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
@@ -14,3 +18,5 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+
+reportWebVitals ();
