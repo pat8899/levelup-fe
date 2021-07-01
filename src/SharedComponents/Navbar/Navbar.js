@@ -22,12 +22,12 @@ function Navbar() {
           </Link>
         </div>
         <div>
-          <Link to="/student-projects" className="link">
+          <Link to="/aboutus" className="link">
             <h2 className="NavBarOption">About Us</h2>
           </Link>
         </div>
         <div>
-          <Link to="/contact" className="link">
+          <Link to="/contactus" className="link">
             <h2 className="NavBarOption Contact">Contact</h2>
           </Link>
         </div>

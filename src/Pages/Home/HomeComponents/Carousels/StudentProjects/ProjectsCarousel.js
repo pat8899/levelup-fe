@@ -5,6 +5,7 @@ import ProjectHighlight from "./ProjectHighlight";
 import ProjectPreview from "./ProjectPreview";
 import NavArrowLeft from "../../../../../Images/NavArrowLeft.png";
 import NavArrowRight from "../../../../../Images/NavArrowRight.png";
+import {Link} from "react-router-dom";
 
 function ProjectsCarousel() {
   /*Save backend data in projectList state */
@@ -71,41 +72,53 @@ function ProjectsCarousel() {
       />
       {Project.length !== 0 ? (
         <div className="CarouselProjects">
-          <ProjectPreview
-            name={SP1.studentName}
-            age={SP1.studentAge}
-            level={SP1.studentLevel}
-          />
+          <Link to="/student-projects" className="link">
+            <ProjectPreview
+              name={SP1.studentName}
+              age={SP1.studentAge}
+              level={SP1.studentLevel}
+            />
+          </Link>
 
-          <ProjectHighlight
-            name={SP2.studentName}
-            age={SP2.studentAge}
-            level={SP2.studentLevel}
-          />
+          <Link to="/student-projects" className="link">
+            <ProjectHighlight
+              name={SP2.studentName}
+              age={SP2.studentAge}
+              level={SP2.studentLevel}
+            />
+          </Link>
 
-          <ProjectHighlight
-            name={SP3.studentName}
-            age={SP3.studentAge}
-            level={SP3.studentLevel}
-          />
+          <Link to="/student-projects" className="link">
+            <ProjectHighlight
+              name={SP3.studentName}
+              age={SP3.studentAge}
+              level={SP3.studentLevel}
+            />
+          </Link>
 
-          <ProjectHighlight
-            name={SP4.studentName}
-            age={SP4.studentAge}
-            level={SP4.studentLevel}
-          />
+          <Link to="/student-projects" className="link">
+            <ProjectHighlight
+              name={SP4.studentName}
+              age={SP4.studentAge}
+              level={SP4.studentLevel}
+            />
+          </Link>
 
-          <ProjectHighlight
-            name={SP5.studentName}
-            age={SP5.studentAge}
-            level={SP5.studentLevel}
-          />
+          <Link to="/student-projects" className="link">
+            <ProjectHighlight
+              name={SP5.studentName}
+              age={SP5.studentAge}
+              level={SP5.studentLevel}
+            />
+          </Link>
 
-          <ProjectPreview
-            name={SP6.studentName}
-            age={SP6.studentAge}
-            level={SP6.studentLevel}
-          />
+          <Link to="/student-projects" className="link">
+            <ProjectPreview
+              name={SP6.studentName}
+              age={SP6.studentAge}
+              level={SP6.studentLevel}
+            />
+          </Link>
         </div>
       ) : null}
       <img

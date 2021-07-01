@@ -1,6 +1,7 @@
 import React from "react";
 import "./Subsection1.css";
 import PlaceholderImage from "../../../Images/PlaceholderImage.png";
+import {Link} from "react-router-dom";
 
 function Subsection1() {
   return (
@@ -24,9 +25,9 @@ function Subsection1() {
           adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
         </p>
         <div className="LearnMoreBtnContainer">
-          <a href="/" className="link">
+          <Link to="/course" className="link">
             <h2 className="LearnMoreBtn">Learn More</h2>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
