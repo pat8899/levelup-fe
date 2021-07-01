@@ -13,7 +13,7 @@ function StudentProjectsPage() {
 
   /*Called backend whenever page is refreshed */
   useEffect(() => {
-    Axios.get("http://localhost:3001/read").then((response) => {
+    Axios.get("http://localhost:3001/read-projects").then((response) => {
       setProjectList(response.data);
     });
   }, []);
