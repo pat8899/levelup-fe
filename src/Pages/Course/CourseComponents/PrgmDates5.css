@@ -1,0 +1,26 @@
+.PrgmDates5Container {
+    margin-top: 0 auto;
+    padding-top: 15px;
+    background-color: #c4c4c5;
+    padding-left: 470px;
+}
+.PrgmDates5SubContainer {
+    margin-top: 0 auto;
+    align-items: center;
+    max-width: 55%;
+    padding-bottom: 40px;
+}
+.PrgmDates5Header {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 45px;
+    color: #333333;
+    text-align: center;
+}
+.PrgmDates5Gap {
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+    

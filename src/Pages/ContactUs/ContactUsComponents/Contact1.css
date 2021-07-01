@@ -1,0 +1,40 @@
+.Contact1Container {
+    margin: 0 auto;
+padding-left: 150px;
+
+}
+
+.AboutHeader {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 86px;
+    color: #333333;
+    margin-top: 40px;
+    padding-top: 30px;
+    margin-bottom: 35px;
+
+  }
+  
+  .AboutDescription {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #666666;
+
+  }
+
+  
+ 
+  /*Image */
+  .Contact1Img {
+    width: 48px;
+    height: 48px;
+    padding: 180px 300px 201px 300px;
+    background-color: #f1f1f1;
+    margin: 30px 0 30px 0;
+    z-index: -1;
+  }

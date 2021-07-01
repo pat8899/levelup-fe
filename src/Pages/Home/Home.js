@@ -6,7 +6,9 @@ import Subsection2 from "./HomeComponents/Subsection2";
 import PreviewStudentProjects from "./HomeComponents/PreviewStudentProjects";
 import CourseReviews from "./HomeComponents/CourseReviews";
 
+
 function Home() {
+
   return (
     <div>
       {/* Hero is a shared componenent*/}
