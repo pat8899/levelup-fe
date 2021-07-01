@@ -1,5 +1,9 @@
 .CarouselRow {
   display: flex;
+}
+
+.CarouselProjects {
+  display: flex;
   position: relative;
   margin-left: 95px;
 }
@@ -14,10 +18,10 @@
 }
 
 .CarouselArrowLeft {
-  left: 242px;
+  left: 340px;
   z-index: 2;
 }
 
 .CarouselArrowRight {
-  left: 1425px;
+  left: 1523px;
 }
