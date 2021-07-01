@@ -1,15 +1,25 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import "./StudentProjectsPage.css";
+import Axios from "axios";
 import Hero from "../../SharedComponents/Hero/Hero";
-import {StudentProjects} from "../../Data/StudentProjects";
 import {Modal} from "./Modal.js";
 import StudentProject from "./StudentProject";
 import NavArrowLeft from "../../Images/NavArrowLeft.png";
 import NavArrowRight from "../../Images/NavArrowRight.png";
 
 function StudentProjectsPage() {
+  /*Save backend data in projectList state */
+  const [projectList, setProjectList] = useState([]);
+
+  /*Called backend whenever page is refreshed */
+  useEffect(() => {
+    Axios.get("http://localhost:3001/read").then((response) => {
+      setProjectList(response.data);
+    });
+  }, []);
+
   /*Map Array */
-  const data = StudentProjects.map(function (data) {
+  const data = projectList.map(function (data) {
     return data;
   });
 
@@ -42,8 +52,8 @@ function StudentProjectsPage() {
   const modalUpdateProject1 = () => {
     let updateModal = {
       name: p1.studentName,
-      age: p1.age,
-      level: p1.level,
+      age: p1.studentAge,
+      level: p1.studentLevel,
       current: 0,
     };
     setModalProject(updateModal);
@@ -53,8 +63,8 @@ function StudentProjectsPage() {
   const modalUpdateProject2 = () => {
     let updateModal = {
       name: p2.studentName,
-      age: p2.age,
-      level: p2.level,
+      age: p2.studentAge,
+      level: p2.studentLevel,
       current: 1,
     };
     setModalProject(updateModal);
@@ -64,8 +74,8 @@ function StudentProjectsPage() {
   const modalUpdateProject3 = () => {
     let updateModal = {
       name: p3.studentName,
-      age: p3.age,
-      level: p3.level,
+      age: p3.studentAge,
+      level: p3.studentLevel,
       current: 2,
     };
     setModalProject(updateModal);
@@ -75,8 +85,8 @@ function StudentProjectsPage() {
   const modalUpdateProject4 = () => {
     let updateModal = {
       name: p4.studentName,
-      age: p4.age,
-      level: p4.level,
+      age: p4.studentAge,
+      level: p4.studentLevel,
       current: 3,
     };
     setModalProject(updateModal);
@@ -86,8 +96,8 @@ function StudentProjectsPage() {
   const modalUpdateProject5 = () => {
     let updateModal = {
       name: p5.studentName,
-      age: p5.age,
-      level: p5.level,
+      age: p5.studentAge,
+      level: p5.studentLevel,
       current: 4,
     };
     setModalProject(updateModal);
@@ -97,15 +107,15 @@ function StudentProjectsPage() {
   const modalUpdateProject6 = () => {
     let updateModal = {
       name: p6.studentName,
-      age: p6.age,
-      level: p6.level,
+      age: p6.studentAge,
+      level: p6.studentLevel,
       current: 5,
     };
     setModalProject(updateModal);
     setShowModal(true);
   };
 
-  /* Testing  */
+  /* Modal left arrow state change */
   function PreviousModal() {
     const nextModal =
       modalProject.current - 1 === -1 ? 5 : modalProject.current - 1;
@@ -124,6 +134,7 @@ function StudentProjectsPage() {
     }
   }
 
+  /* Modal right arrow state change */
   function NextModal() {
     const nextModal =
       modalProject.current + 1 === 6 ? 0 : modalProject.current + 1;
@@ -141,9 +152,6 @@ function StudentProjectsPage() {
       return modalUpdateProject6();
     }
   }
-  /* Testing  */
-
-  console.log(modalProject);
 
   const scrollHeight = 1200; /*Added to stop page shuffling up and down */
 
@@ -196,49 +204,51 @@ function StudentProjectsPage() {
       />
       {/* <button onClick={toggleModal}>On CLICK</button> */}
       <div className="ProjectsContainer">
-        <StudentProject
-          studentName={p1.studentName}
-          age={p1.age}
-          level={p1.level}
-          onClickFunc={modalUpdateProject1}
-        />
+        {p1 !== undefined ? (
+          <StudentProject
+            studentName={p1.studentName}
+            age={p1.age}
+            level={p1.level}
+            onClickFunc={modalUpdateProject1}
+          />
+        ) : null}
         {p2 !== undefined ? (
           <StudentProject
             studentName={p2.studentName}
-            age={p2.age}
-            level={p2.level}
+            age={p2.studentAge}
+            level={p2.studentLevel}
             onClickFunc={modalUpdateProject2}
           />
         ) : null}
         {p3 !== undefined ? (
           <StudentProject
             studentName={p3.studentName}
-            age={p3.age}
-            level={p3.level}
+            age={p3.studentAge}
+            level={p3.studentLevel}
             onClickFunc={modalUpdateProject3}
           />
         ) : null}
         {p4 !== undefined ? (
           <StudentProject
             studentName={p4.studentName}
-            age={p4.age}
-            level={p4.level}
+            age={p4.studentAge}
+            level={p4.studentLevel}
             onClickFunc={modalUpdateProject4}
           />
         ) : null}
         {p5 !== undefined ? (
           <StudentProject
             studentName={p5.studentName}
-            age={p5.age}
-            level={p5.level}
+            age={p5.studentAge}
+            level={p5.studentLevel}
             onClickFunc={modalUpdateProject5}
           />
         ) : null}
         {p5 !== undefined ? (
           <StudentProject
             studentName={p6.studentName}
-            age={p6.age}
-            level={p6.level}
+            age={p6.studentAge}
+            level={p6.studentLevel}
             onClickFunc={modalUpdateProject6}
           />
         ) : null}
