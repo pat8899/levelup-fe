@@ -1,15 +1,26 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import "./ReviewCarousel.css";
+import Axios from "axios";
 import {ReviewData} from "../../../../../Data/ReviewData";
 import NavArrowLeft from "../../../../../Images/NavArrowLeft.png";
 import NavArrowRight from "../../../../../Images/NavArrowRight.png";
 
 function ReviewCarousel() {
+  const [reviewList, setReviewList] = useState([]);
+
+  useEffect(() => {
+    Axios.get("http://localhost:3001/read-reviews").then((response) => {
+      setReviewList(response.data);
+    });
+  }, []);
+
+  console.log(reviewList);
+
   const [reviewLeft, setReviewLeft] = useState(0);
   const [reviewCenter, setReviewCenter] = useState(1);
   const [reviewRight, setReviewRight] = useState(2);
 
-  const reviewData = ReviewData.map(function (data) {
+  const reviewData = reviewList.map(function (data) {
     return data;
   });
 
@@ -34,7 +45,6 @@ function ReviewCarousel() {
     setReviewRight(reviewRight === 0 ? reviews : reviewRight - 1);
   };
 
-  console.log(reviewData);
   return (
     <div className="CourseReviews">
       <img
@@ -43,45 +53,54 @@ function ReviewCarousel() {
         alt="Arrow Left"
         className="NavArrowLeft"
       />
-
-      <div className="ReviewOpen">
-        <div className="PlaceholderReviewImg"></div>
-        <div className="ReviewOpenContainer">
-          <h2 className="ReviewHeading">{leftReview.reviewHeading}</h2>
-          <p className="ReviewBodyOpen">{leftReview.reviewBody}</p>
-          <div className="ReviewContent">
-            <div className="PlaceholderParentPhoto"></div>
-            <div>
-              <h3 className="ParentName">{leftReview.parentName}</h3>
-              <p className="ParentIdentifier">{leftReview.parentIdentifyer}</p>
+      {reviewData.length !== 0 ? (
+        <div className="ReviewOpen">
+          <div className="PlaceholderReviewImg"></div>
+          <div className="ReviewOpenContainer">
+            <h2 className="ReviewHeading">{leftReview.reviewHeading}</h2>
+            <p className="ReviewBodyOpen">{leftReview.reviewBody}</p>
+            <div className="ReviewContent">
+              <div className="PlaceholderParentPhoto"></div>
+              <div>
+                <h3 className="ParentName">{leftReview.parentName}</h3>
+                <p className="ParentIdentifier">
+                  {leftReview.parentIdentifyer}
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      ) : null}
 
-      <div className="ReviewClosed">
-        <h2 className="ReviewHeading">{centerReview.reviewHeading}</h2>
-        <p className="ReviewBody">{centerReview.reviewBody}</p>
-        <div className="ReviewContentClosed">
-          <div className="PlaceholderParentPhoto"></div>
-          <div>
-            <h3 className="ParentName">{centerReview.parentName}</h3>
-            <p className="ParentIdentifier">{centerReview.parentIdentifyer}</p>
+      {reviewData.length !== 0 ? (
+        <div className="ReviewClosed">
+          <h2 className="ReviewHeading">{centerReview.reviewHeading}</h2>
+          <p className="ReviewBody">{centerReview.reviewBody}</p>
+          <div className="ReviewContentClosed">
+            <div className="PlaceholderParentPhoto"></div>
+            <div>
+              <h3 className="ParentName">{centerReview.parentName}</h3>
+              <p className="ParentIdentifier">
+                {centerReview.parentIdentifyer}
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      ) : null}
 
-      <div className="ReviewClosed">
-        <h2 className="ReviewHeading">{rightReview.reviewHeading}</h2>
-        <p className="ReviewBody">{rightReview.reviewBody}</p>
-        <div className="ReviewContentClosed">
-          <div className="PlaceholderParentPhoto"></div>
-          <div>
-            <h3 className="ParentName">{rightReview.parentName}</h3>
-            <p className="ParentIdentifier">{rightReview.parentIdentifyer}</p>
+      {reviewData.length !== 0 ? (
+        <div className="ReviewClosed">
+          <h2 className="ReviewHeading">{rightReview.reviewHeading}</h2>
+          <p className="ReviewBody">{rightReview.reviewBody}</p>
+          <div className="ReviewContentClosed">
+            <div className="PlaceholderParentPhoto"></div>
+            <div>
+              <h3 className="ParentName">{rightReview.parentName}</h3>
+              <p className="ParentIdentifier">{rightReview.parentIdentifyer}</p>
+            </div>
           </div>
         </div>
-      </div>
+      ) : null}
 
       <img
         src={NavArrowRight}

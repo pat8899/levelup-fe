@@ -28,8 +28,6 @@ function ProjectsCarousel() {
   const Project = projectList.map(function (data) {
     return data;
   });
-  console.log("Project");
-  console.log(Project[0]);
 
   let NumberOfProjects = Project.length - 1;
 
@@ -58,9 +56,6 @@ function ProjectsCarousel() {
   const SP4 = Project[Container3];
   const SP5 = Project[Container4];
   const SP6 = Project[Container5];
-
-  console.log("Projectttt");
-  console.log(Project);
 
   return (
     <div className="CarouselRow">
