@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Redirect } from "react-router-dom";
 import { AuthContext } from "./Auth";
-import firebaseConfig from "../../config.js";
+import firebaseConfig from "../../firebase/config.js";
 import PlaceholderImage from "../../Images/PlaceholderImage.png";
 import "./Login.css";
 
@@ -66,11 +66,11 @@ const Login = () => {
                   />
                 </div>
 
-                <div class="mb-3">
-                  <div class="form-check">
+                <div className="mb-3">
+                  <div className="form-check">
                     <input
                       type="checkbox"
-                      class="form-check-input"
+                      className="form-check-input"
                       id="dropdownCheck"
                     />
                     <label class="form-check-label" for="dropdownCheck">
@@ -80,19 +80,19 @@ const Login = () => {
                   </div>
                 </div>
 
-                <div class="mb-3"></div>
+                <div className="mb-3"></div>
                 <button type="submit" className="btn btn-secondary col-12">
                   Login
                 </button>
 
-                <a class="dropdown-item" href="#">
+                <a className="dropdown-item" href="#">
                   Create Account
                 </a>
               </form>
             </div>
           </div>
 
-          <div class="col">
+          <div className="col">
             <img
               src={PlaceholderImage}
               className="LoginImg"
